@@ -29,6 +29,9 @@ else{
 
 //SCONTI PER CATEGORIE//
 
-let sconto_1 = total_price * 20 / 100;
+let sconto_1 = (total_price * 20) / 100;
+console.log(sconto_1);
 
-let sconto_2 = total_price * 40 / 100;
+let sconto_2 = (total_price * 40) / 100;
+console.log(sconto_2);
+

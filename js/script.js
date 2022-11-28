@@ -4,8 +4,8 @@ let chilometri = parseInt(prompt('Ciao! Per favore inserisci il numero dei km ch
 console.log(chilometri);
 
 //ETA' UTENTE//
-let età = parseInt(prompt('Per favore adesso inserisci la tua età, servirà per calcolare il prezzo finale.'))
-console.log(età);
+let eta = parseInt(prompt('Per favore adesso inserisci la tua età, servirà per calcolare il prezzo finale.'))
+console.log(eta);
 
 //CALCOLO PREZZO BIGLIETTO//
 
@@ -17,11 +17,16 @@ console.log(total_price);
 
 //CONDIZIONI//
 
-if(età < 18){
+if(eta < 18){
     console.log('Il cliente avrà uno sconto del 20%');
+    let sconto_1 = total_price * 20 / 100;
+    total_price = total_price - sconto_1;
+    console.log(sconto_1);
 }
-else if(età > 65){
+else if(eta > 65){
     console.log('Il cliente avrà uno sconto del 40%')
+    let sconto_2 = total_price * 40 / 100;
+    total_price = total_price - sconto_2;
 }
 else{
     console.log('Il cliente non avrà nessuno sconto')
